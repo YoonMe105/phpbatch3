@@ -87,23 +87,74 @@
 //     echo "File Not Found !!!";
 // }
 
-$fileopen = fopen('file4.txt','a');
-if($fileopen){
-    // echo "Ok";
+// $fileopen = fopen('file4.txt','a');
+// if($fileopen){
+//     // echo "Ok";
 
-    $message = "Welcome to our website.\n";
-    fwrite($fileopen,$message);
-    $message = "Thanks for using our template🤗.";
-    fwrite($fileopen,$message);
+//     $message = "Welcome to our website.\n";
+//     fwrite($fileopen,$message);
+//     $message = "Thanks for using our template🤗.";
+//     fwrite($fileopen,$message);
 
     
-    $fileopen = fopen('file4.txt',"r");
-    $fileread = fread($fileopen,filesize('file4.txt'));
+//     $fileopen = fopen('file4.txt',"r");
+//     $fileread = fread($fileopen,filesize('file4.txt'));
 
-    fclose($fileopen);
+//     fclose($fileopen);
 
-    echo $fileread;
-}else{
-    echo "File Not Found !!!";
-}
+//     echo $fileread;
+// }else{
+//     echo "File Not Found !!!";
+// }
+
+
+// -------------------------
+
+// echo file_get_contents('file1.txt');
+
+// $existingfile = "file1.txt";
+// $newfile = "file5.txt";
+// $message = file_get_contents($existingfile);
+// $message .= "\n Thanks for using php file system. ";
+// file_put_contents($newfile,$message) or die('Unable to open file');
+// echo file_get_contents('file5.txt');
+
+
+// $existingfile = "file60.txt";
+// $newfile = "file6.txt";
+// if(file_exists($existingfile)){
+//     $message = file_get_contents($existingfile);
+//     $message .= "\n Thanks for using php file system. ";
+
+//     file_put_contents($newfile,$message) or die('Unable to open file');
+// }else{
+//     echo "File Not Found";
+// }
+
+// $existingfile = "file4.txt";
+// $newfile = "file6.txt";
+// if(file_exists($existingfile)){
+//     $message = file_get_contents($existingfile);
+//     $message .= "\n Thanks for using php file system. ";
+
+//     file_put_contents($newfile,$message) or die('Unable to open file');
+// }else{
+//     echo "File Not Found";
+// }
+
+// $file = "file1.txt";
+// copy($file,'file7.txt');
+// echo file_get_contents('file7.txt');
+
+
+// $file = "file1.txt";
+// if(file_exists($file)){
+//     unlink($file);
+//     echo "File Delete Successfully";
+// }else{
+//     echo "File Not Found";
+// }
+
+echo "<pre>".print_r(glob('*.txt'),true)."</pre>"
+
 ?>
