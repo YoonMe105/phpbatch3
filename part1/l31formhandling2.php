@@ -15,7 +15,7 @@ $name = $email = $password = $city = $favcolor = $bio = "";
 if($_SERVER['REQUEST_METHOD'] === "POST"){
 	$name = textfilter($_POST['name']);
 	$email = textfilter($_POST['email']);
-	$pasword = textfilter($_POST['password']);
+	$password = textfilter($_POST['password']);
 	$city = textfilter($_POST['city']);
 	$favcolor = textfilter($_POST['favcolor']);
 	$bio = textfilter($_POST['bio']);
@@ -50,7 +50,7 @@ function textfilter($data){
 
 		<div>
 			<label for="password">Password</label>
-			<input type="password" name="pasword" id="pasword" class="" />
+			<input type="password" name="password" id="password" class="" />
 		</div>
 
 		<div>

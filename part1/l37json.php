@@ -8,6 +8,8 @@
 
 // -----------can't------------
 
+echo "Can't <br/>";
+
 $colors = ['red','green','blue'];
 var_dump($colors);
 
@@ -17,8 +19,11 @@ echo($mycolors);
 echo "<br/>";
 var_dump($mycolors);
 
+echo "<hr/>";
 
 // --------------
+
+echo "Json Encode <br/>";
 
 $students = ["name"=>"aung aung","age"=>25,"city"=>"yangon"];
 
@@ -41,6 +46,8 @@ echo "<hr/>";
 
 // =>Decode by single pg_parameter_status()
 
+echo "Json Decode Single pg_parameter_status() <br/>";
+
 $students = '{"name":"aung aung","age":25,"city":"yangon"}';
 $studentsde = json_decode($students);
 
@@ -61,7 +68,11 @@ foreach($studentsde as $key=>$value){
     echo $key . " is ". $value ."<br/>";
 }
 
+echo "<hr/>";
+
 // =>Decode by multi parameter
+
+echo "Json Decode Multi parameter <br/>";
 
 $students = '{"name":"aung aung","age":25,"city":"yangon"}';
 $studentsde = json_decode($students,true);
