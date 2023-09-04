@@ -51,10 +51,10 @@ $val1 = 40;
 echo "val1 is " . is_float($val1) . "<br/>";
 
 $val2 = 34.56;
-echo "val1 is " . is_float($val2) . "<br/>";
+echo "val2 is " . is_float($val2) . "<br/>";  // 1
 
 $val3 = "34.56";
-echo "val1 is " . is_float($val3) . "<br/>";
+echo "val3 is " . is_float($val3) . "<br/>";
 
 echo "<hr/>";
 
@@ -80,7 +80,7 @@ echo "val1 is " . is_array($val1) . "<br/>";
 
 // $val2 = ["aung aung","su su"];
 $val2 = array("aung aung","su su");
-echo "val2 is " . is_array($val2) . "<br/>";
+echo "val2 is " . is_array($val2) . "<br/>";  // 1
 
 echo "<hr/>";
 
@@ -136,6 +136,26 @@ if(isset($val1)){
 
 echo "<hr/>";
 
+// => isset() vs unset()
+
+// $city;
+$city = "Yangon";
+$country = "Thailand";
+echo isset($city) ? "Yes" : "No";
+echo "<br/>";
+echo "$city <br/>";  // Yangon
+echo "$country <br/>";  // Thailand
+
+// unset($city);
+// unset($country);
+
+unset($city,$country);  //unset is changing the variable to NULL
+echo "$city <br/>";
+echo "$country <br/>";
+
+
+echo "<hr/>";
+
 // gettype(variable) Function
 
 $val1 = 50;
@@ -151,16 +171,16 @@ echo var_dump($val3) . "<br/>"; //string
 echo gettype($val3) . "<br/>"; //string
 
 $val4 = array();
-echo var_dump($val4) . "<br/>"; 
-echo gettype($val4) . "<br/>"; 
+echo var_dump($val4) . "<br/>"; //array(0) { }
+echo gettype($val4) . "<br/>"; //array
 
 $val5 = false;
-echo var_dump($val5) . "<br/>"; 
-echo gettype($val5) . "<br/>"; 
+echo var_dump($val5) . "<br/>"; // bool(false)
+echo gettype($val5) . "<br/>";   //boolean
 
 $val6 = NULL;
-echo var_dump($val6) . "<br/>"; 
-echo gettype($val6) . "<br/>"; 
+echo var_dump($val6) . "<br/>"; //NULL
+echo gettype($val6) . "<br/>"; //NULL
 
 echo "<hr/>";
 
@@ -191,6 +211,8 @@ settype($val3,"integer");
 var_dump($val3);
 echo "<br/>";
 echo "<br/>";
+
+echo "<hr/>";
 
 
 

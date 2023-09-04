@@ -15,7 +15,7 @@ echo count($colorones);
 echo "<br/>";
 $coloroneskey = array_keys($colorones);
 echo "<br/>";
-var_dump($coloroneskey);
+var_dump($coloroneskey); //array(7) { [0]=> int(0) [1]=> int(1) [2]=> int(2) [3]=> int(3) [4]=> int(4) [5]=> int(5) [6]=> int(6) }
 echo "<br/>";
 echo "<br/>";
 
@@ -61,7 +61,7 @@ echo "<br/>";
 // 	$x++;
 // }while($x <= 5);
 
-
+//               7
 for($i=0; $i < count($colorones); $i++){
     // echo "$i";
     // echo "<br/>";

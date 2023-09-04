@@ -27,7 +27,7 @@ echo "<hr/>";
 
 // 2.$_SERVER
 
-echo $_SERVER["PHP_SELF"]; ///phpbatch3/part1/l12superglobalvariables.php
+echo $_SERVER["PHP_SELF"]; // /phpbatch3/part1/l12superglobalvariables.php
 
 echo "<hr/>";
 
@@ -35,7 +35,7 @@ echo $_SERVER["HTTP_USER_AGENT"]; //Mozilla/5.0 (Windows NT 10.0; Win64; x64) Ap
 
 echo "<hr/>";
 
-echo $_SERVER['HTTP_HOST']; //localhost:8000
+echo $_SERVER['HTTP_HOST']; //localhost
 
 echo "<hr/>";
 
@@ -43,7 +43,7 @@ echo $_SERVER['SERVER_NAME'];  //localhost (Return the name of host server - www
 
 echo "<hr/>";
 
-echo $_SERVER['SERVER_SOFTWARE'];  //Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6
+echo $_SERVER['SERVER_SOFTWARE'];  //Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
 
 echo "<hr/>";
 
@@ -55,7 +55,7 @@ echo $_SERVER['SERVER_PROTOCOL'];  //HTTP/1.1
 
 echo "<hr/>";
 
-echo $_SERVER['SERVER_SIGNATURE'];  //Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.0.25 Server at localhost Port 80
+echo $_SERVER['SERVER_SIGNATURE'];  //Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at localhost Port 80
 
 echo "<hr/>";
 

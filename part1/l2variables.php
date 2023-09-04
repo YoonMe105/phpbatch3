@@ -78,7 +78,7 @@ echo "<hr/>";
 // define('variablename','value');
 // Note:: string/int/boolean/float oki
 // variable name should be uppercase
-// redefind are deny
+// redefind are deny(can't override)
 
 define('FULLNAME','Honey Nway Oo');
 echo FULLNAME;  // Honey Nway Oo
@@ -120,7 +120,7 @@ echo "<br/>";
 // =>constant : const keyword
 // Note:: string/int/boolean/float oki
 // variable name should be uppercase
-// redefind are deny
+// redefind are deny(can't override)
 
 const MESSAGE = 'Hello sir, are you ready to learn PHP OOP concept ??';
 echo MESSAGE;  // Hello sir, are you ready to learn PHP OOP concept ??

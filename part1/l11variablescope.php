@@ -26,6 +26,7 @@ function funtwo(){
 funtwo(); //Local Variable in function = 200
 echo "Local Variable print outside = $num2";  //Local Variable print outside = (no print out cuz function will generate an error)
 
+echo "<br/>";
 // global Keyword
 
 $num3 = 300;
@@ -50,6 +51,7 @@ $num6 = 600;
 
 function funfive(){
 	$GLOBALS['sum'] = $GLOBALS['num5'] + $GLOBALS['num6'];
+	// $sum = $GLOBALS['num5'] + $GLOBALS['num6'];
 	echo "This is sum , print by funfive = $sum <br/>"; //$GLOBALS['sum'] is not variable
 }
 
@@ -109,6 +111,8 @@ funten($num10); //10000;
 echo "$num10 <br/>"; //10000;
 echo "$num10 <br/>"; //10000;
 
+echo "<hr/>";
+
 $name = "Aung Aung";
 
 function funname($val){
@@ -122,10 +126,10 @@ function funname($val){
 // echo "$name <br/>"; //Kyaw Kyaw
 
 $fullname = "Aung Tun Tun";
- //Aung Aung
-echo "$name <br/>"; //Aung Tun Tun
-echo "$fullname <br/>"; //Kyaw Kyaw
-funname($fullname);//Aung Aung
-echo "$name <br/>";
-echo "$fullname <br/>";  //Kyaw Kyaw
+ 
+echo "$name <br/>"; //Aung Aung
+echo "$fullname <br/>"; //Aung Tun Tun
+funname($fullname); // Kyaw Kyaw
+echo "$name <br/>";   //Aung Aung
+echo "$fullname <br/>";   // Aung Tun Tun
 ?>

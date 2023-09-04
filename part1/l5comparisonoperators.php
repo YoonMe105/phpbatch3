@@ -22,7 +22,7 @@ $num2 = '10';
 // echo ($num1 == $num2) ? "Your condition is true" : "your condition is false";
 // echo ($num1 === $num2) ? "Your condition is true" : "your condition is false";
 // echo ($num1 != $num2) ? "Your condition is true" : "your condition is false";
-echo ($num1 <> $num2) ? "Your condition is true" : "your condition is false";
+echo ($num1 <> $num2) ? "Your condition is true" : "your condition is false";  // false
 // echo ($num1 !== $num2) ? "Your condition is true" : "your condition is false";
 // echo ($num1 > $num2) ? "Your condition is true" : "your condition is false";
 // echo ($num1 >= $num2) ? "Your condition is true" : "your condition is false";

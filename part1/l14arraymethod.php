@@ -13,13 +13,13 @@ echo array_chunk($couples,2)[0][1]; //su su
 
 
 echo "<pre>".print_r(array_chunk($couples,2,true),"true")."</pre>"; //0 1 2 3 4 5 6
-echo "<pre>".print_r(array_chunk($couples,2,false),"true")."</pre>"; //01 01 01 01
+echo "<pre>".print_r(array_chunk($couples,2,false),"true")."</pre>"; //01 01 01 01  // default
 
 echo "<hr/>";
 
 
 // array_combine() Function
-// array_combine(array1,array2) Function
+// array_combine(array1,array2) Function  //two array need to have the same length
 
 $name = array("aung aung","su su","maung maung","hla hla");
 $age = ["30","25","35","40"];
@@ -539,6 +539,25 @@ echo var_dump(sizeof($colors));
 
 echo "<hr/>";
 
+// => serialize() vs unserialize()
+
+$staffs = [
+    ['aung aung','maung maung','kyaw kyaw','tun tun','thura'],
+    ['su su','yu yu','nu nu','aye aye','hla hla']
+];
+
+echo "<pre>".print_r($staffs,true)."</pre>";
+
+$seridatas = serialize($staffs);
+echo $seridatas;
+echo "<br/>";
+var_dump($seridatas);  // string
+echo "<br/>";
+
+$unseridatas = unserialize($seridatas);
+echo "<pre>".print_r($unseridatas,true)."</pre>";
+
+echo "<hr/>";
 
 
 ?>

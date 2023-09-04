@@ -28,6 +28,13 @@ echo "<br/>";
 echo $num2%$num1;
 echo "<br/>";
 
+// $num1 = 100;
+// $num2 = 200;
+// $num3 = 30.28;
+// $city = "Mawlamyine";
+// $car = false;
+// $myarrs = ['maung maung','kyaw kyaw'];
+// $colors = array('red','blue','green');
 
 var_dump($num1);
 echo "<br/>";
